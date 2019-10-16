@@ -1,0 +1,9 @@
+version: "3"
+services:
+    py-simple-server:
+        build: "."
+        image: "docker.dev.com/py-simple-server"
+        ports:
+            - "8080:8000"
+        volumes:
+            - "./app:/opt/app"
